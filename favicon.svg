@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#F9C747"/>
+  <!-- Geometric butterfly simplified -->
+  <g transform="translate(32,28)" stroke="#111" stroke-width="1.5" fill="none">
+    <line x1="0" y1="-14" x2="0" y2="14" stroke-width="2"/>
+    <circle cx="0" cy="-15" r="2" fill="#111"/>
+    <!-- Wings -->
+    <polygon points="0,-4 -18,-16 -22,-2 -14,4" fill="rgba(17,17,17,0.15)"/>
+    <polygon points="0,-4 -18,-16 -10,-22 -5,-11" fill="rgba(17,17,17,0.25)"/>
+    <polygon points="0,4 -14,4 -20,16 -7,18" fill="rgba(17,17,17,0.15)"/>
+    <polygon points="0,-4 18,-16 22,-2 14,4" fill="rgba(17,17,17,0.15)"/>
+    <polygon points="0,-4 18,-16 10,-22 5,-11" fill="rgba(17,17,17,0.25)"/>
+    <polygon points="0,4 14,4 20,16 7,18" fill="rgba(17,17,17,0.15)"/>
+  </g>
+</svg>

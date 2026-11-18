@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LAARA – Premium Women's Leggings. Comfort that moves with you. Style that stays with you." />
+  <title>LAARA – Premium Women's Leggings</title>
+
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header class="nav-header" id="navbar">
+    <div class="nav-container">
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <img src="assets/images/laara-logo.jpg" alt="LAARA Leggings Logo" class="logo-img" />
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#collection" class="nav-link">Collection</a>
+        <a href="#why-laara" class="nav-link">Why LAARA</a>
+        <a href="#story" class="nav-link">Our Story</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#instagram" class="nav-link">Instagram</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartToggle" aria-label="Shopping cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+      <div class="search-inner">
+        <input type="text" id="searchInput" placeholder="Search leggings, styles, colors…" class="search-input" />
+        <button class="search-close" id="searchClose" aria-label="Close search">✕</button>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">✕</button>
+    <nav class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#collection" class="mobile-nav-link">Collection</a>
+      <a href="#why-laara" class="mobile-nav-link">Why LAARA</a>
+      <a href="#story" class="mobile-nav-link">Our Story</a>
+      <a href="#reviews" class="mobile-nav-link">Reviews</a>
+      <a href="#instagram" class="mobile-nav-link">Instagram</a>
+    </nav>
+    <div class="mobile-nav-footer">
+      <p>@laara.co.in.pdtr</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-gradient-overlay"></div>
+      <!-- Decorative pattern -->
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-label reveal">Premium Women's Leggings</span>
+      <h1 class="hero-headline reveal delay-1">Feel Good.<br /><em>Look Effortless.</em></h1>
+      <p class="hero-sub reveal delay-2">Discover everyday comfort with leggings designed<br class="hide-mobile" /> for every version of you.</p>
+      <div class="hero-ctas reveal delay-3">
+        <a href="#collection" class="btn btn-primary">Explore Collection</a>
+        <a href="#collection" class="btn btn-outline">Shop Now</a>
+      </div>
+      <div class="hero-brand-statement reveal delay-4">
+        <span class="divider-line"></span>
+        <p>Premium Leggings for Every You.</p>
+        <span class="divider-line"></span>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MARQUEE STRIP
+  ═══════════════════════════════════════════ -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>COMFORT THAT MOVES WITH YOU</span>
+      <span class="marquee-dot">✦</span>
+      <span>STYLE THAT STAYS WITH YOU</span>
+      <span class="marquee-dot">✦</span>
+      <span>PREMIUM LEGGINGS FOR EVERY YOU</span>
+      <span class="marquee-dot">✦</span>
+      <span>LAARA — FEEL GOOD. LOOK EFFORTLESS.</span>
+      <span class="marquee-dot">✦</span>
+      <span>COMFORT THAT MOVES WITH YOU</span>
+      <span class="marquee-dot">✦</span>
+      <span>STYLE THAT STAYS WITH YOU</span>
+      <span class="marquee-dot">✦</span>
+      <span>PREMIUM LEGGINGS FOR EVERY YOU</span>
+      <span class="marquee-dot">✦</span>
+      <span>LAARA — FEEL GOOD. LOOK EFFORTLESS.</span>
+      <span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SHOP COLLECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section collection-section" id="collection">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">The Edit</span>
+        <h2 class="section-title">Our Collection</h2>
+        <p class="section-sub">Crafted for comfort. Designed for life.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar reveal">
+        <div class="filter-scroll">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="everyday">Everyday</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="lounge">Lounge</button>
+          <button class="filter-btn" data-filter="plus">Plus</button>
+        </div>
+        <div class="sort-select-wrap">
+          <select class="sort-select" id="sortSelect" aria-label="Sort products">
+            <option value="default">Sort by: Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="new">Newest First</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Products are rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       WHY LAARA
+  ═══════════════════════════════════════════ -->
+  <section class="section why-section" id="why-laara">
+    <div class="why-bg-accent"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">The LAARA Difference</span>
+        <h2 class="section-title">Why Choose LAARA?</h2>
+        <p class="section-sub">Every pair tells the story of comfort meets elegance.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon-wrap">
+            <svg class="why-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="28" stroke="#F9C747" stroke-width="2"/>
+              <path d="M22 32c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 44c2-6 7.5-10 14-10s12 4 14 10" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="32" cy="22" r="4" fill="#F9C747"/>
+            </svg>
+          </div>
+          <h3 class="why-title">Everyday Comfort</h3>
+          <p class="why-desc">Buttery-soft fabrics engineered to move with your body from sunrise to sunset, all day, every day.</p>
+        </div>
+        <div class="why-card reveal delay-1">
+          <div class="why-icon-wrap">
+            <svg class="why-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="28" stroke="#F9C747" stroke-width="2"/>
+              <path d="M32 16l4.9 9.9 11 1.6-7.95 7.75 1.88 10.95L32 41.4l-9.83 5.8 1.88-10.95L16.1 28.5l11-1.6L32 16z" fill="#F9C747" stroke="#111" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="why-title">Premium Feel</h3>
+          <p class="why-desc">Carefully selected high-quality materials that feel as good as they look — luxurious against your skin.</p>
+        </div>
+        <div class="why-card reveal delay-2">
+          <div class="why-icon-wrap">
+            <svg class="why-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="28" stroke="#F9C747" stroke-width="2"/>
+              <path d="M20 44 C20 36 26 28 32 28 C38 28 44 36 44 44" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="32" cy="22" r="5" stroke="#111" stroke-width="2"/>
+              <path d="M26 36 l3 3 7-8" stroke="#F9C747" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="why-title">Effortless Style</h3>
+          <p class="why-desc">Timeless silhouettes and refined details that elevate any outfit — casual, athleisure or day-to-night.</p>
+        </div>
+        <div class="why-card reveal delay-3">
+          <div class="why-icon-wrap">
+            <svg class="why-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="28" stroke="#F9C747" stroke-width="2"/>
+              <path d="M22 20 Q32 14 42 20 Q48 32 42 44 Q32 50 22 44 Q16 32 22 20Z" stroke="#111" stroke-width="2" fill="none"/>
+              <path d="M32 20 Q38 26 38 32 Q38 38 32 44 Q26 38 26 32 Q26 26 32 20Z" fill="#F9C747" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3 class="why-title">Made for Every You</h3>
+          <p class="why-desc">Inclusive sizing, diverse colorways and versatile styles celebrating every shape, every lifestyle, every you.</p>
+        </div>
+      </div>
+
+      <!-- Feature stats -->
+      <div class="stats-row reveal">
+        <div class="stat-item">
+          <span class="stat-num">500+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">12+</span>
+          <span class="stat-label">Styles Available</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Size Options</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Love Guaranteed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       BRAND STORY
+  ═══════════════════════════════════════════ -->
+  <section class="section story-section" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-visual reveal">
+          <div class="story-img-frame">
+            <div class="story-img-bg">
+              <div class="story-butterfly-art" aria-hidden="true">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="260" height="260">
+                  <!-- Geometric butterfly similar to logo -->
+                  <g transform="translate(100,100)" stroke="#F9C747" stroke-width="1.5" fill="none" opacity="0.9">
+                    <!-- Body -->
+                    <line x1="0" y1="-40" x2="0" y2="40" stroke="#111" stroke-width="2"/>
+                    <circle cx="0" cy="-42" r="4" fill="#111"/>
+                    <!-- Left upper wing -->
+                    <polygon points="0,-10 -55,-45 -65,-5 -40,10" stroke="#111"/>
+                    <polygon points="0,-10 -55,-45 -30,-60 -15,-30" stroke="#111"/>
+                    <polygon points="-15,-30 -55,-45 -30,-60" fill="#F9C747" opacity="0.3" stroke="#111"/>
+                    <!-- Left lower wing -->
+                    <polygon points="0,10 -40,10 -55,40 -20,45" stroke="#111"/>
+                    <polygon points="-20,45 -55,40 -35,60" stroke="#111"/>
+                    <!-- Right upper wing (mirror) -->
+                    <polygon points="0,-10 55,-45 65,-5 40,10" stroke="#111"/>
+                    <polygon points="0,-10 55,-45 30,-60 15,-30" stroke="#111"/>
+                    <polygon points="15,-30 55,-45 30,-60" fill="#F9C747" opacity="0.3" stroke="#111"/>
+                    <!-- Right lower wing -->
+                    <polygon points="0,10 40,10 55,40 20,45" stroke="#111"/>
+                    <polygon points="20,45 55,40 35,60" stroke="#111"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="story-label-badge">Est. 2024</div>
+            </div>
+          </div>
+          <div class="story-quote-bubble">
+            <p>"Every stitch carries<br/>a little love."</p>
+          </div>
+        </div>
+        <div class="story-content reveal delay-1">
+          <span class="section-tag">Our Story</span>
+          <h2 class="section-title">Born from Comfort.<br /><em>Built with Purpose.</em></h2>
+          <p class="story-para">LAARA was born from a simple but powerful idea — that a woman should never have to choose between looking good and feeling comfortable. Too often, beautiful clothing came at the cost of ease, and comfortable clothing sacrificed style.</p>
+          <p class="story-para">We set out to change that. LAARA leggings are crafted with meticulous care, premium materials and thoughtful design that embraces every curve, supports every stride and elevates every moment — from your morning routine to your evening out.</p>
+          <p class="story-para">Because you deserve leggings that move with you, stay with you and celebrate you, every single day.</p>
+          <div class="story-values">
+            <div class="story-val"><span class="val-dot"></span><strong>Comfort First</strong></div>
+            <div class="story-val"><span class="val-dot"></span><strong>Quality Materials</strong></div>
+            <div class="story-val"><span class="val-dot"></span><strong>Inclusive Sizing</strong></div>
+            <div class="story-val"><span class="val-dot"></span><strong>Timeless Style</strong></div>
+          </div>
+          <a href="#collection" class="btn btn-primary" style="margin-top:2rem;">Discover the Collection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       INSTAGRAM SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="section instagram-section" id="instagram">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Social</span>
+        <h2 class="section-title">Stay Connected With LAARA</h2>
+        <a href="https://www.instagram.com/laara.co.in.pdtr" target="_blank" rel="noopener" class="ig-handle">@laara.co.in.pdtr</a>
+      </div>
+
+      <div class="ig-gallery reveal">
+        <!-- Placeholder Instagram gallery tiles -->
+        <a href="https://www.instagram.com/laara.co.in.pdtr" target="_blank" rel="noopener" class="ig-tile" aria-label="LAARA Instagram post 1">
+          <div class="ig-tile-bg" style="background: linear-gradient(135deg, #F9C747 0%, #e8b430 100%);">
+            <div class="ig-tile-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </div>
+            <span class="ig-tile-text">New Collection Drop ✨</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/laara.co.in.pdtr" target="_blank" rel="noopener" class="ig-tile ig-tile--tall" aria-label="LAARA Instagram post 2">
+          <div class="ig-tile-bg" style="background: linear-gradient(160deg, #111 0%, #333 60%, #F9C747 100%);">
+            <div class="ig-tile-overlay"></div>
+            <span class="ig-tile-text">Your Everyday Essential 🖤</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/laara.co.in.pdtr" target="_blank" rel="noopener" class="ig-tile" aria-label="LAARA Instagram post 3">
+          <div class="ig-tile-bg" style="background: linear-gradient(135deg, #FFF9EA 0%, #F9C747 80%);">
+            <div class="ig-tile-overlay"></div>
+            <span class="ig-tile-text">Feel Good Fridays 💛</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/laara.co.in.pdtr" target="_blank" rel="noopener" class="ig-tile ig-tile--wide" aria-label="LAARA Instagram post 4">
+          <div class="ig-tile-bg" style="background: linear-gradient(120deg, #e8b430 0%, #111 100%);">
+            <div class="ig-tile-overlay"></div>
+            <span class="ig-tile-text">Move in Luxury 👑</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/laara.co.in.pdtr" target="_blank" rel="noopener" class="ig-tile" aria-label="LAARA Instagram post 5">
+          <div class="ig-tile-bg" style="background: linear-gradient(135deg, #333 0%, #F9C747 100%);">
+            <div class="ig-tile-overlay"></div>
+            <span class="ig-tile-text">Style For Every You 🦋</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="ig-cta reveal">
+        <a href="https://www.instagram.com/laara.co.in.pdtr" target="_blank" rel="noopener" class="btn btn-primary ig-follow-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px; vertical-align:middle;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          Follow Us on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CUSTOMER REVIEWS
+  ═══════════════════════════════════════════ -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">Words From Our Community</h2>
+        <p class="section-sub">Real stories, real love. We will update this with your genuine reviews.</p>
+      </div>
+      <div class="reviews-track-wrap">
+        <div class="reviews-track" id="reviewsTrack">
+          <!-- Reviews rendered by JS -->
+        </div>
+        <button class="reviews-nav prev" id="revPrev" aria-label="Previous review">‹</button>
+        <button class="reviews-nav next" id="revNext" aria-label="Next review">›</button>
+      </div>
+      <div class="reviews-dots" id="reviewsDots"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand column -->
+          <div class="footer-col footer-brand-col">
+            <img src="assets/images/laara-logo.jpg" alt="LAARA Logo" class="footer-logo" />
+            <p class="footer-tagline">Comfort that moves with you.<br />Style that stays with you.</p>
+            <div class="footer-socials">
+              <a href="https://www.instagram.com/laara.co.in.pdtr" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+              <a href="https://wa.me/?text=Hi%20LAARA%2C%20I%20am%20interested%20in%20your%20leggings!" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#collection" class="footer-link">Shop Collection</a></li>
+              <li><a href="#why-laara" class="footer-link">Why LAARA</a></li>
+              <li><a href="#story" class="footer-link">Our Story</a></li>
+              <li><a href="#reviews" class="footer-link">Reviews</a></li>
+              <li><a href="#instagram" class="footer-link">Instagram</a></li>
+            </ul>
+          </div>
+
+          <!-- Policies -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Policies</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link" id="privacyLink">Privacy Policy</a></li>
+              <li><a href="#" class="footer-link" id="shippingLink">Shipping Policy</a></li>
+              <li><a href="#" class="footer-link" id="returnLink">Return Policy</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Contact Us</h4>
+            <ul class="footer-links contact-links">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>[Your email here]</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.4 2 2 0 0 1 3.59 2.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
+                <span>[Your phone here]</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>India</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">© 2024 LAARA. All rights reserved. Made with 🦋 for every woman.</p>
+        <p class="footer-ig"><a href="https://www.instagram.com/laara.co.in.pdtr" target="_blank" rel="noopener">@laara.co.in.pdtr</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       SHOPPING CART DRAWER
+  ═══════════════════════════════════════════ -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">Your Cart</h3>
+      <button class="cart-drawer-close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty" id="cartEmpty">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <p>Your cart is empty</p>
+        <a href="#collection" class="btn btn-primary" onclick="closeCart()">Start Shopping</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span class="cart-subtotal-amount" id="cartSubtotal">₹0</span>
+      </div>
+      <p class="cart-note">Taxes and shipping calculated at checkout. Secure payment handled via trusted provider.</p>
+      <button class="btn btn-primary btn-full" id="checkoutBtn">Proceed to Checkout</button>
+      <button class="btn btn-outline btn-full" onclick="openWhatsApp()">Enquire via WhatsApp</button>
+    </div>
+  </aside>
+
+  <!-- ═══════════════════════════════════════════
+       PRODUCT QUICK VIEW MODAL
+  ═══════════════════════════════════════════ -->
+  <div class="modal-backdrop" id="quickViewBackdrop"></div>
+  <dialog class="quick-view-modal" id="quickViewModal">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <div class="modal-inner" id="modalInner">
+      <!-- Rendered by JS -->
+    </div>
+  </dialog>
+
+  <!-- ═══════════════════════════════════════════
+       POLICY MODALS
+  ═══════════════════════════════════════════ -->
+  <div class="modal-backdrop" id="policyBackdrop"></div>
+  <dialog class="policy-modal" id="policyModal">
+    <button class="modal-close" id="policyModalClose" aria-label="Close">✕</button>
+    <div class="policy-modal-inner" id="policyModalContent"></div>
+  </dialog>
+
+  <!-- ═══════════════════════════════════════════
+       CHECKOUT MODAL
+  ═══════════════════════════════════════════ -->
+  <div class="modal-backdrop" id="checkoutBackdrop"></div>
+  <dialog class="checkout-modal" id="checkoutModal">
+    <button class="modal-close" id="checkoutModalClose" aria-label="Close">✕</button>
+    <div class="checkout-modal-inner">
+      <h2 class="checkout-title">Almost There!</h2>
+      <p class="checkout-sub">We're setting up our secure checkout. In the meantime, enquire directly via WhatsApp for the fastest response.</p>
+      <div class="checkout-actions">
+        <button class="btn btn-primary" onclick="openWhatsApp(); document.getElementById('checkoutModal').close(); document.getElementById('checkoutBackdrop').classList.remove('visible');">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;vertical-align:middle;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          Order via WhatsApp
+        </button>
+        <button class="btn btn-outline" onclick="document.getElementById('checkoutModal').close(); document.getElementById('checkoutBackdrop').classList.remove('visible');">Continue Shopping</button>
+      </div>
+      <p class="checkout-disclaimer">⚠️ No payment is processed on this site. All orders are confirmed manually via WhatsApp or email.</p>
+    </div>
+  </dialog>
+
+  <!-- ═══════════════════════════════════════════
+       WHATSAPP FLOATING BUTTON
+  ═══════════════════════════════════════════ -->
+  <a href="#" id="whatsappFloat" class="whatsapp-float" aria-label="Enquire on WhatsApp" onclick="openWhatsApp(); return false;">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    <span class="whatsapp-tooltip">Enquire Now</span>
+  </a>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
